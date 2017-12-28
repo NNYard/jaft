@@ -1,0 +1,12 @@
+package com.ericsson.rda.jaft.api;
+
+import com.ericsson.rda.jaft.entity.*;
+
+/**
+ * Created by Eric Cen on 8/24/2017.
+ */
+public interface RpcSender {
+    VoteResponse requestVote(VoteRequest request);
+    AppendEntryResponse requestAppendEntry(AppendEntryRequest request);
+    HeartBeatResponse heartBeat(HeartBeatRequest request);
+}
